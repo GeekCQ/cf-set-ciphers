@@ -1,0 +1,6 @@
+Permit input to be submitted on CLI for scripting.
+Add Quiet for no screen output
+Add Debug mode.
+Ask if user as rewuired infor and Add hotlink to API Keys screen if not.
+
+
