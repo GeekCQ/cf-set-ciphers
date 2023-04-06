@@ -5,6 +5,9 @@ Python script. List zones, view/update ciphers using predefined (Modern,
 Compatible, Legacy) or custom lists. Features logging for tracking
 changes.
 
+## Requires: 
+A subscription to CloudFlare Advanced Certificate Manager is **required** to set custom cipher suites
+
 ## Installation
 
 1.  Clone the repository or download the *cf-set-ciphers.py* script.
@@ -21,8 +24,9 @@ changes.
 
 ## Usage
 
-1.  Run the script:
-
+1.  chmod 0700 cf-set-ciphers.py
+2.  Run the script:
+    ./cf-set-ciphers.py [-lz -lc]
 <!-- -->
 
 1.  Follow the prompts to enter your Cloudflare API token and desired
@@ -30,8 +34,8 @@ changes.
 
 ### Script options
 
--   List zones and their names:
-
+-   List zoneID's and their names:
+    *python cf-set-ciphers.py -lz*
 <!-- -->
 
 -   List the current ciphers for the specified zone:  
@@ -40,7 +44,7 @@ changes.
 
 <!-- -->
 
--   Update the cipher list for the specified zone:  
+-   Update the cipher list for a zone:  
       
     *python cf-set-ciphers.py*
 
